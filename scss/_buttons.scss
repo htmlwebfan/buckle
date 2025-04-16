@@ -1,0 +1,58 @@
+.buckle-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: $border-radius;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+
+  &.primary {
+    background: $primary-color;
+    color: $white;
+    border-color: $primary-color;
+
+    &:hover {
+      background: darken($primary-color, 10%);
+      border-color: darken($primary-color, 10%);
+    }
+  }
+
+  &.success {
+    background: $success-color;
+    color: $white;
+    border-color: $success-color;
+
+    &:hover {
+      background: darken($success-color, 10%);
+      border-color: darken($success-color, 10%);
+    }
+  }
+
+  &.danger {
+    background: $danger-color;
+    color: $white;
+    border-color: $danger-color;
+
+    &:hover {
+      background: darken($danger-color, 10%);
+      border-color: darken($danger-color, 10%);
+    }
+  }
+
+  &.outline {
+    background: transparent;
+    color: $primary-color;
+    border-color: $primary-color;
+
+    &:hover {
+      background: $primary-color;
+      color: $white;
+    }
+  }
+}
+
+.buckle-btn-sm {
+  padding: 4px 8px;
+  font-size: 14px;
+}

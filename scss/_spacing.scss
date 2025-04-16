@@ -1,0 +1,70 @@
+@use 'sass:math';
+
+$padding-sizes: (
+  0: 0,
+  1: $spacing,
+  2: $spacing * 2,
+  3: $spacing * 3,
+  4: $spacing * 4
+);
+
+@each $size, $value in $padding-sizes {
+  .buckle-p-#{$size} {
+    padding: $value;
+  }
+  .buckle-px-#{$size} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+  .buckle-py-#{$size} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+  .buckle-pt-#{$size} {
+    padding-top: $value;
+  }
+  .buckle-pr-#{$size} {
+    padding-right: $value;
+  }
+  .buckle-pb-#{$size} {
+    padding-bottom: $value;
+  }
+  .buckle-pl-#{$size} {
+    padding-left: $value;
+  }
+}
+
+$margin-sizes: (
+  0: 0,
+  1: $spacing,
+  2: $spacing * 2,
+  3: $spacing * 3,
+  4: $spacing * 4,
+  auto: auto
+);
+
+@each $size, $value in $margin-sizes {
+  .buckle-m-#{$size} {
+    margin: $value;
+  }
+  .buckle-mx-#{$size} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+  .buckle-my-#{$size} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+  .buckle-mt-#{$size} {
+    margin-top: $value;
+  }
+  .buckle-mr-#{$size} {
+    margin-right: $value;
+  }
+  .buckle-mb-#{$size} {
+    margin-bottom: $value;
+  }
+  .buckle-ml-#{$size} {
+    margin-left: $value;
+  }
+}

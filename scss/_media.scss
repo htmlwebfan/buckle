@@ -1,0 +1,19 @@
+.buckle-media {
+  display: block;
+  max-width: 100%;
+}
+
+.buckle-media-image {
+  height: auto;
+}
+
+.buckle-media-video {
+  width: 100%;
+  border-radius: $border-radius;
+}
+
+.buckle-media-circle {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}

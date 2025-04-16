@@ -1,0 +1,30 @@
+.buckle-tabs {
+  margin-bottom: 16px;
+}
+
+.buckle-tab-list {
+  display: flex;
+  border-bottom: 1px solid $gray;
+}
+
+.buckle-tab {
+  padding: 8px 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: $gray;
+
+  &.active {
+    color: $primary-color;
+    border-bottom: 2px solid $primary-color;
+  }
+}
+
+.buckle-tab-panel {
+  display: none;
+  padding: 16px;
+}
+
+.buckle-tab-panel.active {
+  display: block;
+}

@@ -1,0 +1,22 @@
+.buckle-form-group {
+  @extend .buckle-mb-2 !optional;
+}
+
+.buckle-form-control {
+  width: 100%;
+  @extend .buckle-p-1 !optional;
+  border: 1px solid $gray;
+  border-radius: $border-radius;
+  font-size: 16px;
+  &:focus {
+    outline: none; /* Fixed typo from earlier */
+    border-color: $primary-color;
+    box-shadow: 0 0 4px rgba($primary-color, 0.3);
+  }
+}
+
+.buckle-form-label {
+  display: block;
+  margin-bottom: calc($spacing / 2);
+  font-weight: bold;
+}

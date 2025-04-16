@@ -1,0 +1,65 @@
+@use 'buckle';
+
+body {
+  background: #f8f9fa;
+}
+
+.buckle-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.style-section {
+  margin-bottom: 48px;
+  padding: 24px;
+  background: buckle.$white;
+  border-radius: buckle.$border-radius;
+  box-shadow: 0 2px 4px rgba(buckle.$black, 0.1);
+}
+
+.style-section h2 {
+  margin-bottom: 16px;
+  font-size: 24px;
+  color: #333;
+}
+
+.style-section p {
+  margin-bottom: 16px;
+  color: #666;
+}
+
+.style-example {
+  margin-bottom: 24px;
+}
+
+.style-example:last-child {
+  margin-bottom: 0;
+}
+
+.buckle-scroll-top {
+  @extend .buckle-btn !optional;
+  @extend .buckle-btn-sm !optional;
+  background: buckle.$primary-color;
+  color: buckle.$white;
+  border: 1px solid buckle.$primary-color;
+  border-radius: buckle.$border-radius;
+  padding: 8px 12px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+  transition: background-color 0.3s, border-color 0.3s;
+  z-index: 1000;
+
+  &:hover {
+    background: darken(buckle.$primary-color, 10%);
+    border-color: darken(buckle.$primary-color, 10%);
+  }
+
+  &:focus {
+    outline: 2px solid buckle.$primary-color;
+    outline-offset: 2px;
+  }
+}

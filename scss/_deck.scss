@@ -1,0 +1,103 @@
+@use 'sass:math';
+
+.buckle-deck {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing * 2;
+  @extend .buckle-mb-2 !optional;
+}
+
+.buckle-deck-card {
+  flex: 1 1 calc(#{math.div(100%, 3)} - #{$spacing * 2});
+  border: 1px solid $gray;
+  border-radius: $border-radius;
+  overflow: hidden;
+  background: $white;
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba($black, 0.1);
+  }
+
+  .buckle-deck-media {
+    @extend .buckle-m-0 !optional;
+    width: 100%;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+  }
+
+  .buckle-deck-body {
+    @extend .buckle-p-2 !optional;
+  }
+
+  .buckle-deck-title {
+    font-size: 20px;
+    @extend .buckle-mb-1 !optional;
+    color: $black;
+  }
+
+  .buckle-deck-text {
+    font-size: 16px;
+    color: $gray;
+    @extend .buckle-mb-1 !optional;
+  }
+
+  .buckle-btn {
+    @extend .buckle-mt-1 !optional;
+  }
+}
+
+/* Transitions */
+.buckle-deck[data-transition="slide"] .buckle-deck-card {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.buckle-deck[data-transition="fade"] .buckle-deck-card {
+  opacity: 0;
+}
+
+.buckle-deck.visible .buckle-deck-card {
+  animation: none;
+}
+
+.buckle-deck[data-transition="slide"].visible .buckle-deck-card {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+.buckle-deck[data-transition="fade"].visible .buckle-deck-card {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@for $i from 1 through 6 {
+  .buckle-deck-card:nth-child(#{$i}) {
+    animation-delay: #{$i * 0.1}s;
+  }
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .buckle-deck-card {
+    flex: 1 1 calc(50% - #{$spacing * 2});
+  }
+}
+
+@media (max-width: 576px) {
+  .buckle-deck-card {
+    flex: 1 1 100%;
+  }
+}

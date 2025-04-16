@@ -1,0 +1,31 @@
+.buckle-alert {
+  @extend .buckle-p-2 !optional;
+  @extend .buckle-mb-2 !optional;
+  border-radius: $border-radius;
+  position: relative;
+
+  &.success {
+    background: $success-color;
+    color: $white;
+  }
+
+  &.danger {
+    background: $danger-color;
+    color: $white;
+  }
+
+  &.warning {
+    background: $warning-color;
+    color: $black;
+  }
+}
+
+.buckle-alert-close {
+  position: absolute;
+  top: $spacing;
+  right: $spacing;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}

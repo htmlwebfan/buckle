@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buckle Home Page</title>
+  <link rel="stylesheet" href="css/sample.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="buckle-nav">
+    <div class="buckle-nav-container">
+      <div class="buckle-nav-logo">
+        <img src="img/logo.png" alt="Buckle Logo">
+      </div>
+      <ul class="buckle-nav-list">
+        <li><a href="#home" data-scroll-to="#home">Home</a></li>
+        <li><a href="#services" data-scroll-to="#services">Services</a></li>
+        <li><a href="#testimonials" data-scroll-to="#testimonials">Testimonials</a></li>
+        <li><a href="#pricing" data-scroll-to="#pricing">Pricing</a></li>
+        <li><a href="#contact" data-scroll-to="#contact">Contact</a></li>
+      </ul>
+      <button class="buckle-nav-toggle">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Carousel -->
+  <section id="home" class="buckle-hero">
+    <div class="buckle-carousel buckle-carousel-full" data-auto-scroll="true">
+      <div class="buckle-carousel-inner">
+        <div class="buckle-carousel-item">
+          <img src="img/slide-1.jpg" alt="Slide Sample 1">
+          <div class="buckle-hero-text buckle-bg-dark-50 buckle-p-3">
+            <h1>Welcome to Buckle!</h1>
+            <p class="buckle-mb-3">A new lightweight CSS Framework for designing custom websites!</p>
+            <a href="#cta" data-scroll-to="#cta" class="buckle-btn primary">Get Started</a>
+          </div>
+        </div>
+        <div class="buckle-carousel-item">
+          <img src="img/slide-2.jpg" alt="Slide Sample 2">
+          <div class="buckle-hero-text buckle-bg-dark-50 buckle-p-3">
+            <h1>Light Weight</h1>
+            <p class="buckle-mb-3">No need for a bunch of components you don't use.</p>
+            <a href="#services" data-scroll-to="#services" class="buckle-btn primary">Learn More</a>
+          </div>
+        </div>
+        <div class="buckle-carousel-item">
+          <img src="img/slide-3.jpg" alt="Slide Sample 3">
+          <div class="buckle-hero-text buckle-bg-dark-50 buckle-p-3">
+            <h1>Sass Based</h1>
+            <p class="buckle-mb-3">Easy to add to and extend using Sass variables.</p>
+            <a href="#services" data-scroll-to="#services" class="buckle-btn primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <button class="buckle-carousel-prev">❮</button>
+      <button class="buckle-carousel-next">❯</button>
+    </div>
+  </section>
+
+  <!-- Services Section (Using Deck with Media) -->
+  <section id="services" class="buckle-services">
+    <div class="buckle-container">
+      <h2>Our Services</h2>
+      <div class="buckle-deck">
+        <div class="buckle-deck-card">
+          <img src="img/service-thumbnail-1.jpg" alt="Service 1" class="buckle-deck-media buckle-media buckle-media-image buckle-rounded-bottom-none">
+          <div class="buckle-deck-body">
+            <h3 class="buckle-deck-title">Service 1</h3>
+            <p class="buckle-deck-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="buckle-btn primary">Learn More</a>
+          </div>
+        </div>
+        <div class="buckle-deck-card">
+          <video class="buckle-deck-media buckle-media buckle-media-video buckle-rounded-bottom-none" controls>
+            <source src="video/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="buckle-deck-body">
+            <h3 class="buckle-deck-title">Service 2</h3>
+            <p class="buckle-deck-text">Sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+            <a href="#" class="buckle-btn primary">Learn More</a>
+          </div>
+        </div>
+        <div class="buckle-deck-card">
+          <img src="img/service-thumbnail-3.jpg" alt="Service 3" class="buckle-deck-media buckle-media buckle-media-image buckle-rounded-bottom-none">
+          <div class="buckle-deck-body">
+            <h3 class="buckle-deck-title">Service 3</h3>
+            <p class="buckle-deck-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <a href="#" class="buckle-btn primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Carousel -->
+  <section id="testimonials" class="buckle-testimonials">
+    <div class="buckle-container">
+      <h2>Testimonials</h2>
+      <div class="buckle-carousel buckle-carousel-contained">
+        <div class="buckle-carousel-inner">
+          <div class="buckle-carousel-item buckle-testimonial-item">
+            <p>"Amazing service! Highly recommend to everyone."</p>
+            <p><strong>John Doe</strong></p>
+          </div>
+          <div class="buckle-carousel-item buckle-testimonial-item">
+            <p>"A game-changer for our business."</p>
+            <p><strong>Jane Smith</strong></p>
+          </div>
+          <div class="buckle-carousel-item buckle-testimonial-item">
+            <p>"Professional and reliable team."</p>
+            <p><strong>Mike Johnson</strong></p>
+          </div>
+        </div>
+        <button class="buckle-carousel-prev">❮</button>
+        <button class="buckle-carousel-next">❯</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter CTA -->
+  <section id="cta" class="buckle-cta">
+    <div class="buckle-container">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Stay updated with our latest news and offers.</p>
+      <form>
+        <div class="buckle-form-group">
+          <input class="buckle-form-control" type="email" placeholder="Enter your email" required>
+        </div>
+        <button class="buckle-btn success" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Pricing Plans (Using Deck) -->
+  <section id="pricing" class="buckle-pricing">
+    <div class="buckle-container">
+      <h2>Pricing Plans</h2>
+      <div class="buckle-deck">
+        <div class="buckle-deck-card">
+          <div class="buckle-deck-body">
+            <h3 class="buckle-deck-title">Basic</h3>
+            <p class="buckle-deck-text">$9/month</p>
+            <p class="buckle-deck-text">1 User</p>
+            <p class="buckle-deck-text">10GB Storage</p>
+            <a href="#" class="buckle-btn outline">Choose Plan</a>
+          </div>
+        </div>
+        <div class="buckle-deck-card">
+          <div class="buckle-deck-body">
+            <h3 class="buckle-deck-title">Pro</h3>
+            <p class="buckle-deck-text">$19/month</p>
+            <p class="buckle-deck-text">5 Users</p>
+            <p class="buckle-deck-text">50GB Storage</p>
+            <a href="#" class="buckle-btn primary">Choose Plan</a>
+          </div>
+        </div>
+        <div class="buckle-deck-card">
+          <div class="buckle-deck-body">
+            <h3 class="buckle-deck-title">Enterprise</h3>
+            <p class="buckle-deck-text">$49/month</p>
+            <p class="buckle-deck-text">Unlimited Users</p>
+            <p class="buckle-deck-text">200GB Storage</p>
+            <a href="#" class="buckle-btn outline">Choose Plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="buckle-footer">
+    <div class="buckle-container">
+      <div class="buckle-row">
+        <div class="buckle-col-4 buckle-col-md-6 buckle-col-sm-12">
+          <h4>About</h4>
+          <ul class="buckle-footer-list">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="buckle-col-4 buckle-col-md-6 buckle-col-sm-12">
+          <h4>Support</h4>
+          <ul class="buckle-footer-list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="buckle-col-4 buckle-col-md-12 buckle-col-sm-12">
+          <h4>Resources</h4>
+          <ul class="buckle-footer-list">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">API Docs</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Copyright -->
+<div class="buckle-copyright">
+  <p>© 2025 Matthew Way. Buckle Framework licensed under the <a href="LICENSE">MIT License</a>.</p>
+</div>
+
+  <!-- Scroll to Top Button -->
+  <button class="buckle-scroll-top" data-scroll-to="#home">↑</button>
+
+  <script src="js/buckle.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      new Buckle();
+    });
+  </script>
+</body>
+</html>

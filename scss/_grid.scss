@@ -1,0 +1,43 @@
+@use 'sass:math';
+
+.buckle-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing;
+}
+
+.buckle-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 - $spacing;
+}
+
+[class*='buckle-col-'] {
+  padding: $spacing;
+}
+
+@for $i from 1 through 12 {
+  .buckle-col-#{$i} {
+    flex: 0 0 #{math.div(100%, 12) * $i};
+    max-width: #{math.div(100%, 12) * $i};
+  }
+}
+
+@media (max-width: 768px) {
+  @for $i from 1 through 12 {
+    .buckle-col-md-#{$i} {
+      flex: 0 0 #{math.div(100%, 12) * $i};
+      max-width: #{math.div(100%, 12) * $i};
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  @for $i from 1 through 12 {
+    .buckle-col-sm-#{$i} {
+      flex: 0 0 #{math.div(100%, 12) * $i};
+      max-width: #{math.div(100%, 12) * $i};
+    }
+  }
+}

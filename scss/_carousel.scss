@@ -1,0 +1,70 @@
+.buckle-carousel {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.buckle-carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.buckle-carousel-item {
+  flex: 0 0 100%;
+  width: 100%;
+  min-width: 100%; // Prevent stacking
+  box-sizing: border-box;
+}
+
+.buckle-carousel-prev,
+.buckle-carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: $white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 10;
+  font-size:2rem;
+}
+
+.buckle-carousel-prev {
+  left: 1rem;
+}
+
+.buckle-carousel-next {
+  right: 1rem;
+}
+
+// Full-width carousel
+.buckle-carousel-full {
+  width: 100vw;
+  margin: 0;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  .buckle-carousel-inner,
+  .buckle-carousel-item {
+    width: 100vw;
+    min-width: 100vw;
+  }
+}
+
+// Containerized carousel
+.buckle-carousel-contained {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+
+  .buckle-carousel-inner,
+  .buckle-carousel-item {
+    width: 100%;
+    min-width: 100%;
+  }
+}

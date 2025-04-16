@@ -1,0 +1,12 @@
+.buckle-badge {
+  display: inline-block;
+  padding: calc($spacing / 2) $spacing;
+  border-radius: $border-radius;
+  font-size: 14px;
+  font-weight: bold;
+
+  &.primary { background: $primary-color; color: $white; }
+  &.success { background: $success-color; color: $white; }
+  &.danger { background: $danger-color; color: $white; }
+  &.warning { background: $warning-color; color: $black; }
+}

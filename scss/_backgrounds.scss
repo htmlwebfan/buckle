@@ -1,0 +1,15 @@
+$background-opacities: (
+  25: 0.25,
+  50: 0.5,
+  75: 0.75,
+  90: 0.9
+);
+
+@each $opacity-name, $opacity-value in $background-opacities {
+  .buckle-bg-dark-#{$opacity-name} {
+    background-color: rgba($black, $opacity-value);
+  }
+  .buckle-bg-light-#{$opacity-name} {
+    background-color: rgba($white, $opacity-value);
+  }
+}
