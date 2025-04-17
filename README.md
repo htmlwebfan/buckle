@@ -6,6 +6,8 @@ A Lightweight Front-end Framework
 Buckle is a lightweight CSS and JavaScript framework for building modern, responsive websites with ease. At just ~8.4KB (CSS) and ~2.4KB (JS), it delivers essential components without the bloat, perfect for developers who want flexibility and speed.
 Developed by Matthew Way, Buckle powers clean designs like the demo in `index.html`, featuring a full-width hero carousel, rounded images, and a responsive layout.
 
+You can see an example of a simple single page website with a carousel hero, subscribe, services, auto scroll navigation, and more functionality at [Buckle UI Framework](https://buckle.htmlwebfan.com)
+
 ## Features
 - **Hero Carousel**: Full-width slider with auto-scroll and customizable text overlays (see `index.html`).
 - **Testimonials Carousel**: Containerized, mobile-friendly slider for quotes.
