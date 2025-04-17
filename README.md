@@ -1,5 +1,6 @@
 # Buckle Framework
 A Lightweight Front-end Framework
+
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 
 Buckle is a lightweight CSS and JavaScript framework for building modern, responsive websites with ease. At just ~8.4KB (CSS) and ~2.4KB (JS), it delivers essential components without the bloat, perfect for developers who want flexibility and speed.
