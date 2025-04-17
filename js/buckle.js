@@ -140,7 +140,7 @@ class Buckle {
   }
 
   initDeckTransitions() {
-    const decks = document.querySelectorAll('.buckle-deck[data-transition]');
+    const decks = document.querySelectorAll('.buckle-deck-card[data-transition]');
     if (!decks.length) return;
 
     const observer = new IntersectionObserver(

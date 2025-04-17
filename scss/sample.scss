@@ -8,28 +8,6 @@
   width: 100%;
 }
 
-.buckle-carousel-item {
-  position: relative; // Make each slide a positioning context
-}
-
-.buckle-hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 16px;
-  max-width: 600px; // Constrain width
-  width: auto; // Prevent stretching
-  box-sizing: border-box;
-}
-
-.buckle-carousel img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
 .buckle-services {
   padding: 48px 0;
   background: #f8f9fa;
@@ -54,8 +32,6 @@
   }
 
   .buckle-testimonial-item {
-    text-align: center;
-    padding: 24px;
     font-size: 18px;
     color: buckle.$gray;
 
@@ -84,25 +60,7 @@
     margin-bottom: 24px;
     font-size: 18px;
   }
-
-  form {
-    max-width: 500px;
-    margin: 0 auto;
-    @extend .buckle-flex;
-    gap: 16px;
-  }
-
-  .buckle-form-group {
-    flex: 1;
-  }
-
-  .buckle-form-control {
-    width: 100%;
-    padding: 8px;
-    border-radius: buckle.$border-radius;
-    border: none;
-  }
-
+  
   .buckle-btn {
     padding: 8px 24px;
   }
@@ -120,7 +78,6 @@
   }
 
   .buckle-deck-card {
-    text-align: center;
     padding: 24px;
     background: buckle.$white;
     box-shadow: 0 2px 4px rgba(buckle.$black, 0.1);
@@ -166,33 +123,6 @@
   p {
     margin: 0;
     font-size: 14px;
-  }
-}
-
-.buckle-scroll-top {
-  @extend .buckle-btn !optional;
-  @extend .buckle-btn-sm !optional;
-  background: buckle.$primary-color;
-  color: buckle.$white;
-  border: 1px solid buckle.$primary-color;
-  border-radius: buckle.$border-radius;
-  padding: 8px 12px;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  cursor: pointer;
-  display: none;
-  transition: background-color 0.3s, border-color 0.3s;
-  z-index: 1000;
-
-  &:hover {
-    background: darken(buckle.$primary-color, 10%);
-    border-color: darken(buckle.$primary-color, 10%);
-  }
-
-  &:focus {
-    outline: 2px solid buckle.$primary-color;
-    outline-offset: 2px;
   }
 }
 

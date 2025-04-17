@@ -19,10 +19,18 @@
               <img src="./img/logo.png" alt="Buckle Logo">
             </div>
             <ul class="buckle-nav-list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#home" data-scroll-to="#home">Home</a></li>
+              <li><a href="#grid" data-scroll-to="#grid">Grid</a></li>
+              <li><a href="#buttons" data-scroll-to="#buttons">Buttons</a></li>
+              <li><a href="#forms" data-scroll-to="#forms">Forms</a></li>
+              <li><a href="#alerts" data-scroll-to="#alerts">Alerts</a></li>
+              <li><a href="#badges" data-scroll-to="#badges">Badges</a></li>
+              <li><a href="#carousel" data-scroll-to="#carousel">Carousel</a></li>
+              <li><a href="#tabs" data-scroll-to="#tabs">Tabs</a></li>
+              <li><a href="#deck" data-scroll-to="#deck">Deck</a></li>
+              <li><a href="#media" data-scroll-to="#media">Media</a></li>
+              <li><a href="#spacing" data-scroll-to="#spacing">Spacing</a></li>
+              <li><a href="#utilities" data-scroll-to="#utilities">Utilities</a></li>
             </ul>
             <button class="buckle-nav-toggle">☰</button>
           </div>
@@ -31,6 +39,7 @@
     </div>
 
     <!-- Grid -->
+	<section id="grid">
     <div class="style-section">
       <h2>Grid</h2>
       <p>A 12-column responsive grid system.</p>
@@ -94,8 +103,10 @@
         </div>
       </div>
     </div>
+	</section>
 
     <!-- Buttons -->
+	<section id="buttons">
     <div class="style-section">
       <h2>Buttons</h2>
       <p>Styled buttons with variants.</p>
@@ -106,8 +117,10 @@
         <button class="buckle-btn outline">Outline</button>
       </div>
     </div>
+	</section>
 
     <!-- Forms -->
+	<section id="forms">
     <div class="style-section">
       <h2>Forms</h2>
       <p>Input fields and labels for forms.</p>
@@ -125,8 +138,10 @@
         </form>
       </div>
     </div>
+	</section>
 
     <!-- Alerts -->
+	<section id="alerts">
     <div class="style-section">
       <h2>Alerts</h2>
       <p>Notifications with dismissible option.</p>
@@ -142,8 +157,10 @@
         </div>
       </div>
     </div>
+	</section>
 
     <!-- Badges -->
+	<section id="badges">
     <div class="style-section">
       <h2>Badges</h2>
       <p>Small labels for emphasis.</p>
@@ -154,8 +171,10 @@
         <span class="buckle-badge warning">Warning</span>
       </div>
     </div>
+	</section>
 
     <!-- Carousel -->
+	<section id="carousel">
     <div class="style-section">
       <h2>Carousel</h2>
       <p>A sliding content display with optional auto-scrolling.</p>
@@ -174,8 +193,10 @@
         </div>
       </div>
     </div>
+	</section>
 
     <!-- Tabs -->
+	<section id="tabs">
     <div class="style-section">
       <h2>Tabs</h2>
       <p>Interactive tabbed content.</p>
@@ -201,14 +222,16 @@
         </div>
       </div>
     </div>
+	</section>
 
     <!-- Deck -->
+	<section id="deck">
     <div class="style-section">
       <h2>Deck</h2>
       <p>Card-based layouts with optional media and transitions.</p>
       <div class="style-example">
-        <div class="buckle-deck" data-transition="slide">
-          <div class="buckle-deck-card">
+        <div class="buckle-deck">
+          <div class="buckle-deck-card" data-transition="slide-right">
             <img src="img/service-thumbnail-1.jpg" alt="Card 1" class="buckle-deck-media buckle-media buckle-media-image buckle-rounded-bottom-none">
             <div class="buckle-deck-body">
               <h3 class="buckle-deck-title">Card 1</h3>
@@ -216,7 +239,7 @@
               <a href="#" class="buckle-btn primary">Action</a>
             </div>
           </div>
-          <div class="buckle-deck-card">
+          <div class="buckle-deck-card" data-transition="slide-left">
 			<img src="img/service-thumbnail-3.jpg" alt="Card 1" class="buckle-deck-media buckle-media buckle-media-image buckle-rounded-bottom-none">
             <div class="buckle-deck-body">
               <h3 class="buckle-deck-title">Card 2</h3>
@@ -227,8 +250,10 @@
         </div>
       </div>
     </div>
+	</section>
 
     <!-- Media -->
+	<section id="media">
     <div class="style-section">
       <h2>Media</h2>
       <p>Styling for images and videos.</p>
@@ -241,8 +266,10 @@
         </video>
       </div>
     </div>
+	</section>
 
     <!-- Spacing -->
+	<section id="spacing">
     <div class="style-section">
       <h2>Spacing</h2>
       <p>Padding and margin utilities.</p>
@@ -252,8 +279,10 @@
         <div class="buckle-mt-4" style="background: #ced4da;">Margin-top 4 (32px)</div>
       </div>
     </div>
+	</section>
 
     <!-- Utilities -->
+	<section id="utilities">
     <div class="style-section">
       <h2>Utilities</h2>
       <p>Alignment and layout helpers.</p>
@@ -268,6 +297,7 @@
         <div class="buckle-clearfix"></div>
       </div>
     </div>
+	</section>
   </div>
 
   <!-- Scroll to Top -->

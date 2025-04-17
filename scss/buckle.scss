@@ -1,16 +1,5 @@
 @import 'variables';
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.6;
-}
-
+@import 'reset';
 @import 'navbar';
 @import 'grid';
 @import 'buttons';
@@ -20,9 +9,9 @@ body {
 @import 'carousel';
 @import 'tabs';
 @import 'deck';
+@import "hero";
 @import 'media';
 @import 'spacing';
 @import 'utilities';
 @import 'backgrounds';
-
 @import 'custom';

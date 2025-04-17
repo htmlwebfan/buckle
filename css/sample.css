@@ -291,6 +291,29 @@ body {
   font-size: 14px;
 }
 
+.buckle-scroll-top {
+  background: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  padding: 8px 12px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+  transition: background-color 0.3s, border-color 0.3s;
+  z-index: 1000;
+}
+.buckle-scroll-top:hover {
+  background: #0062cc;
+  border-color: #0062cc;
+}
+.buckle-scroll-top:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
 .buckle-form-control {
   width: 100%;
   border: 1px solid #6c757d;
@@ -307,6 +330,23 @@ body {
   display: block;
   margin-bottom: 4px;
   font-weight: bold;
+}
+
+.buckle-form {
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+.buckle-form-group {
+  flex: 1;
+}
+
+.buckle-form-control {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
 }
 
 .buckle-alert {
@@ -376,6 +416,7 @@ body {
   flex: 0 0 100%;
   width: 100%;
   min-width: 100%;
+  position: relative;
   box-sizing: border-box;
 }
 
@@ -427,6 +468,18 @@ body {
   min-width: 100%;
 }
 
+.buckle-carousel img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.buckle-testimonial-item {
+  text-align: center;
+  padding: 24px;
+}
+
 .buckle-tabs {
   margin-bottom: 16px;
 }
@@ -470,6 +523,7 @@ body {
   overflow: hidden;
   background: #fff;
   transition: box-shadow 0.2s;
+  text-align: center;
 }
 .buckle-deck-card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -490,24 +544,51 @@ body {
   color: #6c757d;
 }
 /* Transitions */
-.buckle-deck[data-transition=slide] .buckle-deck-card {
+.buckle-deck .buckle-deck-card[data-transition=slide-left] {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.buckle-deck .buckle-deck-card[data-transition=slide-right] {
   opacity: 0;
   transform: translateX(-50px);
 }
 
-.buckle-deck[data-transition=fade] .buckle-deck-card {
+.buckle-deck .buckle-deck-card[data-transition=slide-up] {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.buckle-deck .buckle-deck-card[data-transition=slide-down] {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.buckle-deck .buckle-deck-card[data-transition=fade-in] {
   opacity: 0;
 }
 
-.buckle-deck.visible .buckle-deck-card {
+.buckle-deck .buckle-deck-card.visible {
   animation: none;
 }
 
-.buckle-deck[data-transition=slide].visible .buckle-deck-card {
-  animation: slideIn 0.5s ease-out forwards;
+.buckle-deck .buckle-deck-card[data-transition=slide-left].visible {
+  animation: slideRight 0.5s ease-out forwards;
 }
 
-.buckle-deck[data-transition=fade].visible .buckle-deck-card {
+.buckle-deck .buckle-deck-card[data-transition=slide-right].visible {
+  animation: slideRight 0.5s ease-out forwards;
+}
+
+.buckle-deck .buckle-deck-card[data-transition=slide-up].visible {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.buckle-deck .buckle-deck-card[data-transition=slide-down].visible {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.buckle-deck .buckle-deck-card[data-transition=fade-in].visible {
   animation: fadeIn 0.5s ease-out forwards;
 }
 
@@ -535,10 +616,28 @@ body {
   animation-delay: 0.6s;
 }
 
-@keyframes slideIn {
+@keyframes slideLeft {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@keyframes slideRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 @keyframes fadeIn {
@@ -556,6 +655,23 @@ body {
     flex: 1 1 100%;
   }
 }
+.buckle-hero {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.buckle-hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 16px;
+  max-width: 600px;
+  width: auto;
+  box-sizing: border-box;
+}
+
 .buckle-media {
   display: block;
   max-width: 100%;
@@ -996,7 +1112,7 @@ body {
   }
 }
 
-.buckle-flex, .buckle-cta form {
+.buckle-flex, .buckle-form {
   display: flex;
 }
 
@@ -1128,28 +1244,6 @@ body {
   width: 100%;
 }
 
-.buckle-carousel-item {
-  position: relative;
-}
-
-.buckle-hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 16px;
-  max-width: 600px;
-  width: auto;
-  box-sizing: border-box;
-}
-
-.buckle-carousel img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
 .buckle-services {
   padding: 48px 0;
   background: #f8f9fa;
@@ -1172,8 +1266,6 @@ body {
   color: #000;
 }
 .buckle-testimonials .buckle-testimonial-item {
-  text-align: center;
-  padding: 24px;
   font-size: 18px;
   color: #6c757d;
 }
@@ -1198,21 +1290,7 @@ body {
   margin-bottom: 24px;
   font-size: 18px;
 }
-.buckle-cta form {
-  max-width: 500px;
-  margin: 0 auto;
-  gap: 16px;
-}
-.buckle-cta .buckle-form-group {
-  flex: 1;
-}
-.buckle-cta .buckle-form-control {
-  width: 100%;
-  padding: 8px;
-  border-radius: 4px;
-  border: none;
-}
-.buckle-cta .buckle-btn, .buckle-cta .buckle-scroll-top {
+.buckle-cta .buckle-btn {
   padding: 8px 24px;
 }
 
@@ -1227,7 +1305,6 @@ body {
   color: #000;
 }
 .buckle-pricing .buckle-deck-card {
-  text-align: center;
   padding: 24px;
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -1267,29 +1344,6 @@ body {
 .buckle-copyright p {
   margin: 0;
   font-size: 14px;
-}
-
-.buckle-scroll-top {
-  background: #007bff;
-  color: #fff;
-  border: 1px solid #007bff;
-  border-radius: 4px;
-  padding: 8px 12px;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  cursor: pointer;
-  display: none;
-  transition: background-color 0.3s, border-color 0.3s;
-  z-index: 1000;
-}
-.buckle-scroll-top:hover {
-  background: #0062cc;
-  border-color: #0062cc;
-}
-.buckle-scroll-top:focus {
-  outline: 2px solid #007bff;
-  outline-offset: 2px;
 }
 
 .buckle-py-4 {

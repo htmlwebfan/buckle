@@ -14,6 +14,7 @@
   overflow: hidden;
   background: $white;
   transition: box-shadow 0.2s;
+  text-align: center;
 
   &:hover {
     box-shadow: 0 4px 8px rgba($black, 0.1);
@@ -50,24 +51,52 @@
 }
 
 /* Transitions */
-.buckle-deck[data-transition="slide"] .buckle-deck-card {
+.buckle-deck .buckle-deck-card[data-transition="slide-left"] {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.buckle-deck .buckle-deck-card[data-transition="slide-right"] {
   opacity: 0;
   transform: translateX(-50px);
 }
 
-.buckle-deck[data-transition="fade"] .buckle-deck-card {
+.buckle-deck .buckle-deck-card[data-transition="slide-up"] {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.buckle-deck .buckle-deck-card[data-transition="slide-down"] {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.buckle-deck .buckle-deck-card[data-transition="fade-in"] {
   opacity: 0;
 }
 
-.buckle-deck.visible .buckle-deck-card {
+.buckle-deck .buckle-deck-card.visible {
   animation: none;
 }
 
-.buckle-deck[data-transition="slide"].visible .buckle-deck-card {
-  animation: slideIn 0.5s ease-out forwards;
+.buckle-deck .buckle-deck-card[data-transition="slide-left"].visible {
+  animation: slideRight 0.5s ease-out forwards;
 }
 
-.buckle-deck[data-transition="fade"].visible .buckle-deck-card {
+.buckle-deck .buckle-deck-card[data-transition="slide-right"].visible {
+  animation: slideRight 0.5s ease-out forwards;
+}
+
+.buckle-deck .buckle-deck-card[data-transition="slide-up"].visible {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+
+.buckle-deck .buckle-deck-card[data-transition="slide-down"].visible {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.buckle-deck .buckle-deck-card[data-transition="fade-in"].visible {
   animation: fadeIn 0.5s ease-out forwards;
 }
 
@@ -77,10 +106,31 @@
   }
 }
 
-@keyframes slideIn {
+@keyframes slideLeft {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
