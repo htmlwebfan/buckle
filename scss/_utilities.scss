@@ -1,42 +1,5 @@
 @use 'sass:math';
 
-.buckle-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 16px;
-}
-
-.buckle-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -8px;
-}
-
-@for $i from 1 through 12 {
-  .buckle-col-#{$i} {
-    flex: 0 0 calc(#{math.div($i, 12)} * 100%);
-    padding: 8px;
-  }
-}
-
-.buckle-col-md-6 {
-  @media (max-width: 768px) {
-    flex: 0 0 50%;
-  }
-}
-
-.buckle-col-md-12 {
-  @media (max-width: 768px) {
-    flex: 0 0 100%;
-  }
-}
-
-.buckle-col-sm-12 {
-  @media (max-width: 576px) {
-    flex: 0 0 100%;
-  }
-}
-
 .buckle-flex {
   display: flex;
 }
@@ -57,44 +20,6 @@
   gap: 16px;
 }
 
-.buckle-m-0 {
-  margin: 0;
-}
-
-.buckle-mb-1 {
-  margin-bottom: 8px;
-}
-
-.buckle-mb-2 {
-  margin-bottom: 16px;
-}
-
-.buckle-mb-3 {
-  margin-bottom: 24px;
-}
-
-.buckle-mt-1 {
-  margin-top: 8px;
-}
-
-.buckle-p-2 {
-  padding: 16px;
-}
-
-.buckle-px-3 {
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.buckle-my-3 {
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-
-.buckle-mt-4 {
-  margin-top: 32px;
-}
-
 .buckle-text-left {
   text-align: left;
 }
@@ -109,10 +34,6 @@
 
 .buckle-float-left {
   float: left;
-}
-
-.buckle-mr-2 {
-  margin-right: 16px;
 }
 
 .buckle-clearfix {

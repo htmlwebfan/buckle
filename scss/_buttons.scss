@@ -56,3 +56,30 @@
   padding: 4px 8px;
   font-size: 14px;
 }
+
+.buckle-scroll-top {
+  @extend .buckle-btn !optional;
+  @extend .buckle-btn-sm !optional;
+  background: $primary-color;
+  color: $white;
+  border: 1px solid $primary-color;
+  border-radius: $border-radius;
+  padding: 8px 12px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+  transition: background-color 0.3s, border-color 0.3s;
+  z-index: 1000;
+
+  &:hover {
+    background: darken($primary-color, 10%);
+    border-color: darken($primary-color, 10%);
+  }
+
+  &:focus {
+    outline: 2px solid $primary-color;
+    outline-offset: 2px;
+  }
+}

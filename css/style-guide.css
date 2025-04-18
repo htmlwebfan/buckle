@@ -67,17 +67,17 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 8px;
+  padding: 0 10px;
 }
 
 .buckle-row {
   display: flex;
   flex-wrap: wrap;
-  margin: -8px;
+  margin: -10px;
 }
 
 [class*=buckle-col-] {
-  padding: 8px;
+  padding: 10px;
 }
 
 .buckle-col-1 {
@@ -328,7 +328,7 @@ body {
 
 .buckle-form-label {
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
   font-weight: bold;
 }
 
@@ -368,8 +368,8 @@ body {
 
 .buckle-alert-close {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 10px;
+  right: 10px;
   background: none;
   border: none;
   font-size: 16px;
@@ -378,7 +378,7 @@ body {
 
 .buckle-badge {
   display: inline-block;
-  padding: 4px 8px;
+  padding: 5px 10px;
   border-radius: 4px;
   font-size: 14px;
   font-weight: bold;
@@ -513,11 +513,11 @@ body {
 .buckle-deck {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 20px;
 }
 
 .buckle-deck-card {
-  flex: 1 1 calc(33.3333333333% - 16px);
+  flex: 1 1 calc(33.3333333333% - 20px);
   border: 1px solid #6c757d;
   border-radius: 4px;
   overflow: hidden;
@@ -647,7 +647,7 @@ body {
 }
 @media (max-width: 768px) {
   .buckle-deck-card {
-    flex: 1 1 calc(50% - 16px);
+    flex: 1 1 calc(50% - 20px);
   }
 }
 @media (max-width: 576px) {
@@ -679,6 +679,11 @@ body {
 
 .buckle-media-image {
   height: auto;
+}
+
+.buckle-media-fluid {
+  width: 100%;
+  max-width: 100%;
 }
 
 .buckle-media-video {
@@ -723,123 +728,153 @@ body {
 }
 
 .buckle-p-1, .buckle-form-control {
-  padding: 8px;
+  padding: 10px;
 }
 
 .buckle-px-1 {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .buckle-py-1 {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .buckle-pt-1 {
-  padding-top: 8px;
+  padding-top: 10px;
 }
 
 .buckle-pr-1 {
-  padding-right: 8px;
+  padding-right: 10px;
 }
 
 .buckle-pb-1 {
-  padding-bottom: 8px;
+  padding-bottom: 10px;
 }
 
 .buckle-pl-1 {
-  padding-left: 8px;
+  padding-left: 10px;
 }
 
 .buckle-p-2, .buckle-alert, .buckle-deck-card .buckle-deck-body {
-  padding: 16px;
+  padding: 20px;
 }
 
 .buckle-px-2 {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .buckle-py-2 {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .buckle-pt-2 {
-  padding-top: 16px;
+  padding-top: 20px;
 }
 
 .buckle-pr-2 {
-  padding-right: 16px;
+  padding-right: 20px;
 }
 
 .buckle-pb-2 {
-  padding-bottom: 16px;
+  padding-bottom: 20px;
 }
 
 .buckle-pl-2 {
-  padding-left: 16px;
+  padding-left: 20px;
 }
 
 .buckle-p-3 {
-  padding: 24px;
+  padding: 30px;
 }
 
 .buckle-px-3 {
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .buckle-py-3 {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .buckle-pt-3 {
-  padding-top: 24px;
+  padding-top: 30px;
 }
 
 .buckle-pr-3 {
-  padding-right: 24px;
+  padding-right: 30px;
 }
 
 .buckle-pb-3 {
-  padding-bottom: 24px;
+  padding-bottom: 30px;
 }
 
 .buckle-pl-3 {
-  padding-left: 24px;
+  padding-left: 30px;
 }
 
 .buckle-p-4 {
-  padding: 32px;
+  padding: 40px;
 }
 
 .buckle-px-4 {
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .buckle-py-4 {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .buckle-pt-4 {
-  padding-top: 32px;
+  padding-top: 40px;
 }
 
 .buckle-pr-4 {
-  padding-right: 32px;
+  padding-right: 40px;
 }
 
 .buckle-pb-4 {
-  padding-bottom: 32px;
+  padding-bottom: 40px;
 }
 
 .buckle-pl-4 {
-  padding-left: 32px;
+  padding-left: 40px;
+}
+
+.buckle-p-5 {
+  padding: 50px;
+}
+
+.buckle-px-5 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.buckle-py-5 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.buckle-pt-5 {
+  padding-top: 50px;
+}
+
+.buckle-pr-5 {
+  padding-right: 50px;
+}
+
+.buckle-pb-5 {
+  padding-bottom: 50px;
+}
+
+.buckle-pl-5 {
+  padding-left: 50px;
 }
 
 .buckle-m-0, .buckle-deck-card .buckle-deck-media {
@@ -873,123 +908,153 @@ body {
 }
 
 .buckle-m-1 {
-  margin: 8px;
+  margin: 10px;
 }
 
 .buckle-mx-1 {
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .buckle-my-1 {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .buckle-mt-1, .buckle-deck-card .buckle-btn, .buckle-deck-card .buckle-scroll-top {
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .buckle-mr-1 {
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .buckle-mb-1, .buckle-deck-card .buckle-deck-title, .buckle-deck-card .buckle-deck-text {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .buckle-ml-1 {
-  margin-left: 8px;
+  margin-left: 10px;
 }
 
 .buckle-m-2 {
-  margin: 16px;
+  margin: 20px;
 }
 
 .buckle-mx-2 {
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .buckle-my-2 {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .buckle-mt-2 {
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 .buckle-mr-2 {
-  margin-right: 16px;
+  margin-right: 20px;
 }
 
 .buckle-mb-2, .buckle-form-group, .buckle-alert, .buckle-deck {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .buckle-ml-2 {
-  margin-left: 16px;
+  margin-left: 20px;
 }
 
 .buckle-m-3 {
-  margin: 24px;
+  margin: 30px;
 }
 
 .buckle-mx-3 {
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .buckle-my-3 {
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .buckle-mt-3 {
-  margin-top: 24px;
+  margin-top: 30px;
 }
 
 .buckle-mr-3 {
-  margin-right: 24px;
+  margin-right: 30px;
 }
 
 .buckle-mb-3 {
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 .buckle-ml-3 {
-  margin-left: 24px;
+  margin-left: 30px;
 }
 
 .buckle-m-4 {
-  margin: 32px;
+  margin: 40px;
 }
 
 .buckle-mx-4 {
-  margin-left: 32px;
-  margin-right: 32px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .buckle-my-4 {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .buckle-mt-4 {
-  margin-top: 32px;
+  margin-top: 40px;
 }
 
 .buckle-mr-4 {
-  margin-right: 32px;
+  margin-right: 40px;
 }
 
 .buckle-mb-4 {
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .buckle-ml-4 {
-  margin-left: 32px;
+  margin-left: 40px;
+}
+
+.buckle-m-5 {
+  margin: 50px;
+}
+
+.buckle-mx-5 {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.buckle-my-5 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.buckle-mt-5 {
+  margin-top: 50px;
+}
+
+.buckle-mr-5 {
+  margin-right: 50px;
+}
+
+.buckle-mb-5 {
+  margin-bottom: 50px;
+}
+
+.buckle-ml-5 {
+  margin-left: 50px;
 }
 
 .buckle-m-auto {
@@ -1022,96 +1087,6 @@ body {
   margin-left: auto;
 }
 
-.buckle-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 16px;
-}
-
-.buckle-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -8px;
-}
-
-.buckle-col-1 {
-  flex: 0 0 calc(0.0833333333 * 100%);
-  padding: 8px;
-}
-
-.buckle-col-2 {
-  flex: 0 0 calc(0.1666666667 * 100%);
-  padding: 8px;
-}
-
-.buckle-col-3 {
-  flex: 0 0 calc(0.25 * 100%);
-  padding: 8px;
-}
-
-.buckle-col-4 {
-  flex: 0 0 calc(0.3333333333 * 100%);
-  padding: 8px;
-}
-
-.buckle-col-5 {
-  flex: 0 0 calc(0.4166666667 * 100%);
-  padding: 8px;
-}
-
-.buckle-col-6 {
-  flex: 0 0 calc(0.5 * 100%);
-  padding: 8px;
-}
-
-.buckle-col-7 {
-  flex: 0 0 calc(0.5833333333 * 100%);
-  padding: 8px;
-}
-
-.buckle-col-8 {
-  flex: 0 0 calc(0.6666666667 * 100%);
-  padding: 8px;
-}
-
-.buckle-col-9 {
-  flex: 0 0 calc(0.75 * 100%);
-  padding: 8px;
-}
-
-.buckle-col-10 {
-  flex: 0 0 calc(0.8333333333 * 100%);
-  padding: 8px;
-}
-
-.buckle-col-11 {
-  flex: 0 0 calc(0.9166666667 * 100%);
-  padding: 8px;
-}
-
-.buckle-col-12 {
-  flex: 0 0 calc(1 * 100%);
-  padding: 8px;
-}
-
-@media (max-width: 768px) {
-  .buckle-col-md-6 {
-    flex: 0 0 50%;
-  }
-}
-
-@media (max-width: 768px) {
-  .buckle-col-md-12 {
-    flex: 0 0 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .buckle-col-sm-12 {
-    flex: 0 0 100%;
-  }
-}
-
 .buckle-flex, .buckle-form {
   display: flex;
 }
@@ -1132,44 +1107,6 @@ body {
   gap: 16px;
 }
 
-.buckle-m-0, .buckle-deck-card .buckle-deck-media {
-  margin: 0;
-}
-
-.buckle-mb-1, .buckle-deck-card .buckle-deck-title, .buckle-deck-card .buckle-deck-text {
-  margin-bottom: 8px;
-}
-
-.buckle-mb-2, .buckle-form-group, .buckle-alert, .buckle-deck {
-  margin-bottom: 16px;
-}
-
-.buckle-mb-3 {
-  margin-bottom: 24px;
-}
-
-.buckle-mt-1, .buckle-deck-card .buckle-btn, .buckle-deck-card .buckle-scroll-top {
-  margin-top: 8px;
-}
-
-.buckle-p-2, .buckle-alert, .buckle-deck-card .buckle-deck-body {
-  padding: 16px;
-}
-
-.buckle-px-3 {
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.buckle-my-3 {
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-
-.buckle-mt-4 {
-  margin-top: 32px;
-}
-
 .buckle-text-left {
   text-align: left;
 }
@@ -1186,10 +1123,6 @@ body {
   float: left;
 }
 
-.buckle-mr-2 {
-  margin-right: 16px;
-}
-
 .buckle-clearfix {
   clear: both;
 }
@@ -1204,6 +1137,14 @@ body {
   border-bottom-right-radius: 0 !important;
 }
 
+.buckle-bg-dark-10 {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.buckle-bg-light-10 {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .buckle-bg-dark-25 {
   background-color: rgba(0, 0, 0, 0.25);
 }
@@ -1212,12 +1153,28 @@ body {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
+.buckle-bg-dark-35 {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.buckle-bg-light-35 {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
 .buckle-bg-dark-50 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .buckle-bg-light-50 {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.buckle-bg-dark-60 {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.buckle-bg-light-60 {
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .buckle-bg-dark-75 {

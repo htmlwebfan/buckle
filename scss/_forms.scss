@@ -20,3 +20,21 @@
   margin-bottom: calc($spacing / 2);
   font-weight: bold;
 }
+
+.buckle-form {
+    max-width: 500px;
+    margin: 0 auto;
+    @extend .buckle-flex;
+    gap: 16px;
+}
+
+.buckle-form-group {
+  flex: 1;
+}
+
+.buckle-form-control {
+  width: 100%;
+  padding: 8px;
+  border-radius: $border-radius;
+  border: none;
+}
