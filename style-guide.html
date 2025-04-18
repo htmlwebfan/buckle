@@ -44,22 +44,22 @@
       <h2>Grid</h2>
       <p>A 12-column responsive grid system.</p>
       <div class="style-example">
-        <div class="buckle-row buckle-mb-1">
+        <div class="buckle-row buckle-mb-2">
           <div class="buckle-col-6 buckle-col-sm-12" style="background: #e9ecef; padding: 16px;">Column 6</div>
           <div class="buckle-col-6 buckle-col-sm-12" style="background: #dee2e6; padding: 16px;">Column 6</div>
         </div>
-        <div class="buckle-row buckle-mb-1">
+        <div class="buckle-row buckle-mb-2">
           <div class="buckle-col-4 buckle-col-sm-12" style="background: #e9ecef; padding: 16px;">Column 4</div>
           <div class="buckle-col-4 buckle-col-sm-12" style="background: #dee2e6; padding: 16px;">Column 4</div>
           <div class="buckle-col-4 buckle-col-sm-12" style="background: #ced4da; padding: 16px;">Column 4</div>
         </div>
-        <div class="buckle-row buckle-mb-1">
+        <div class="buckle-row buckle-mb-2">
           <div class="buckle-col-3 buckle-col-sm-12" style="background: #e9ecef; padding: 16px;">Column 3</div>
           <div class="buckle-col-3 buckle-col-sm-12" style="background: #dee2e6; padding: 16px;">Column 3</div>
           <div class="buckle-col-3 buckle-col-sm-12" style="background: #e9ecef; padding: 16px;">Column 3</div>
           <div class="buckle-col-3 buckle-col-sm-12" style="background: #dee2e6; padding: 16px;">Column 3</div>
         </div>
-        <div class="buckle-row buckle-mb-1">
+        <div class="buckle-row buckle-mb-2">
           <div class="buckle-col-2 buckle-col-sm-12" style="background: #e9ecef; padding: 16px;">Column 2</div>
           <div class="buckle-col-2 buckle-col-sm-12" style="background: #dee2e6; padding: 16px;">Column 2</div>
           <div class="buckle-col-2 buckle-col-sm-12" style="background: #e9ecef; padding: 16px;">Column 2</div>
@@ -67,7 +67,7 @@
           <div class="buckle-col-2 buckle-col-sm-12" style="background: #e9ecef; padding: 16px;">Column 2</div>
           <div class="buckle-col-2 buckle-col-sm-12" style="background: #dee2e6; padding: 16px;">Column 2</div>
         </div>
-		<div class="buckle-row buckle-mb-1">
+		<div class="buckle-row buckle-mb-2">
           <div class="buckle-col-1 buckle-col-sm-12" style="background: #e9ecef; padding: 16px;">Column 1</div>
           <div class="buckle-col-1 buckle-col-sm-12" style="background: #dee2e6; padding: 16px;">Column 1</div>
           <div class="buckle-col-1 buckle-col-sm-12" style="background: #e9ecef; padding: 16px;">Column 1</div>
@@ -81,23 +81,23 @@
           <div class="buckle-col-1 buckle-col-sm-12" style="background: #e9ecef; padding: 16px;">Column 1</div>
           <div class="buckle-col-1 buckle-col-sm-12" style="background: #dee2e6; padding: 16px;">Column 1</div>
         </div>
-        <div class="buckle-row buckle-mb-1">
+        <div class="buckle-row buckle-mb-2">
           <div class="buckle-col-1 buckle-col-sm-12" style="background: #e9ecef; padding: 16px;">Column 1</div>
           <div class="buckle-col-11 buckle-col-sm-12" style="background: #dee2e6; padding: 16px;">Column 11</div>
         </div>
-        <div class="buckle-row buckle-mb-1">
+        <div class="buckle-row buckle-mb-2">
           <div class="buckle-col-2 buckle-col-sm-12" style="background: #e9ecef; padding: 16px;">Column 2</div>
           <div class="buckle-col-10 buckle-col-sm-12" style="background: #dee2e6; padding: 16px;">Column 10</div>
         </div>
-        <div class="buckle-row buckle-mb-1">
+        <div class="buckle-row buckle-mb-2">
           <div class="buckle-col-3 buckle-col-sm-12" style="background: #e9ecef; padding: 16px;">Column 3</div>
           <div class="buckle-col-9 buckle-col-sm-12" style="background: #dee2e6; padding: 16px;">Column 9</div>
         </div>
-        <div class="buckle-row buckle-mb-1">
+        <div class="buckle-row buckle-mb-2">
           <div class="buckle-col-4 buckle-col-sm-12" style="background: #e9ecef; padding: 16px;">Column 4</div>
           <div class="buckle-col-8 buckle-col-sm-12" style="background: #dee2e6; padding: 16px;">Column 8</div>
         </div>
-        <div class="buckle-row buckle-mb-1">
+        <div class="buckle-row buckle-mb-2">
           <div class="buckle-col-5 buckle-col-sm-12" style="background: #e9ecef; padding: 16px;">Column 5</div>
           <div class="buckle-col-7 buckle-col-sm-12" style="background: #dee2e6; padding: 16px;">Column 7</div>
         </div>
@@ -112,7 +112,9 @@
       <p>Styled buttons with variants.</p>
       <div class="style-example buckle-flex buckle-justify-start buckle-gap-2">
         <button class="buckle-btn primary">Primary</button>
+        <button class="buckle-btn info">Info</button>
         <button class="buckle-btn success">Success</button>
+        <button class="buckle-btn warning">Warning</button>
         <button class="buckle-btn danger">Danger</button>
         <button class="buckle-btn outline">Outline</button>
       </div>
@@ -146,7 +148,10 @@
       <h2>Alerts</h2>
       <p>Notifications with dismissible option.</p>
       <div class="style-example">
-        <div class="buckle-alert success">
+        <div class="buckle-alert info">
+          Info message! <span class="buckle-alert-close">×</span>
+        </div>
+		<div class="buckle-alert success">
           Success message! <span class="buckle-alert-close">×</span>
         </div>
         <div class="buckle-alert danger">
@@ -166,6 +171,7 @@
       <p>Small labels for emphasis.</p>
       <div class="style-example buckle-flex buckle-justify-start buckle-gap-2">
         <span class="buckle-badge primary">Primary</span>
+        <span class="buckle-badge info">Info</span>
         <span class="buckle-badge success">Success</span>
         <span class="buckle-badge danger">Danger</span>
         <span class="buckle-badge warning">Warning</span>
@@ -236,7 +242,7 @@
             <div class="buckle-deck-body">
               <h3 class="buckle-deck-title">Card 1</h3>
               <p class="buckle-deck-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere.</p>
-              <a href="#" class="buckle-btn primary">Action</a>
+              <a href="#" class="buckle-btn warning">Action</a>
             </div>
           </div>
           <div class="buckle-deck-card" data-transition="slide-left">
@@ -244,7 +250,7 @@
             <div class="buckle-deck-body">
               <h3 class="buckle-deck-title">Card 2</h3>
               <p class="buckle-deck-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-              <a href="#" class="buckle-btn primary">Action</a>
+              <a href="#" class="buckle-btn danger">Action</a>
             </div>
           </div>
         </div>

@@ -1,8 +1,14 @@
+
 .buckle-alert {
   @extend .buckle-p-2 !optional;
   @extend .buckle-mb-2 !optional;
   border-radius: $border-radius;
   position: relative;
+
+  &.info {
+    background: $info-color;
+    color: $white;
+  }
 
   &.success {
     background: $success-color;

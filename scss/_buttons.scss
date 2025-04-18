@@ -17,6 +17,17 @@
       border-color: darken($primary-color, 10%);
     }
   }
+  
+  &.info {
+    background: $info-color;
+    color: $white;
+    border-color: $info-color;
+
+    &:hover {
+      background: darken($info-color, 10%);
+      border-color: darken($info-color, 10%);
+    }
+  }
 
   &.success {
     background: $success-color;
@@ -39,6 +50,19 @@
       border-color: darken($danger-color, 10%);
     }
   }
+
+  &.warning {
+    background: $warning-color;
+    color: lighten($black,10%);
+    border-color: $warning-color;
+
+    &:hover {
+      background: darken($warning-color, 10%);
+      border-color: darken($warning-color, 10%);
+	  color:$white;
+    }
+  }
+
 
   &.outline {
     background: transparent;

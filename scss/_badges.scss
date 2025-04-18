@@ -6,6 +6,7 @@
   font-weight: bold;
 
   &.primary { background: $primary-color; color: $white; }
+  &.info { background: $info-color; color: $white; }
   &.success { background: $success-color; color: $white; }
   &.danger { background: $danger-color; color: $white; }
   &.warning { background: $warning-color; color: $black; }

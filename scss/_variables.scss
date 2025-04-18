@@ -1,9 +1,10 @@
-$primary-color: #007bff;
-$success-color: #28a745;
-$danger-color: #dc3545;
-$warning-color: #ffc107;
+$primary-color: #023396;
+$info-color: lighten($primary-color,15%);
+$success-color: #027617;
+$danger-color: #bb0000;
+$warning-color: #e3c200;
 $white: #fff;
 $black: #000;
 $gray: #6c757d;
 $border-radius: 4px;
-$spacing: 10px;
+$spacing: 16px;

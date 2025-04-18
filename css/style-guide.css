@@ -67,17 +67,17 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 16px;
 }
 
 .buckle-row {
   display: flex;
   flex-wrap: wrap;
-  margin: -10px;
+  margin: -16px;
 }
 
 [class*=buckle-col-] {
-  padding: 10px;
+  padding: 16px;
 }
 
 .buckle-col-1 {
@@ -250,39 +250,58 @@ body {
   transition: background-color 0.2s, border-color 0.2s;
 }
 .buckle-btn.primary, .primary.buckle-scroll-top {
-  background: #007bff;
+  background: #023396;
   color: #fff;
-  border-color: #007bff;
+  border-color: #023396;
 }
 .buckle-btn.primary:hover, .primary.buckle-scroll-top:hover {
-  background: #0062cc;
-  border-color: #0062cc;
+  background: #012264;
+  border-color: #012264;
+}
+.buckle-btn.info, .info.buckle-scroll-top {
+  background: #034de1;
+  color: #fff;
+  border-color: #034de1;
+}
+.buckle-btn.info:hover, .info.buckle-scroll-top:hover {
+  background: #023caf;
+  border-color: #023caf;
 }
 .buckle-btn.success, .success.buckle-scroll-top {
-  background: #28a745;
+  background: #027617;
   color: #fff;
-  border-color: #28a745;
+  border-color: #027617;
 }
 .buckle-btn.success:hover, .success.buckle-scroll-top:hover {
-  background: #1e7e34;
-  border-color: #1e7e34;
+  background: #01440d;
+  border-color: #01440d;
 }
 .buckle-btn.danger, .danger.buckle-scroll-top {
-  background: #dc3545;
+  background: #bb0000;
   color: #fff;
-  border-color: #dc3545;
+  border-color: #bb0000;
 }
 .buckle-btn.danger:hover, .danger.buckle-scroll-top:hover {
-  background: #bd2130;
-  border-color: #bd2130;
+  background: #880000;
+  border-color: #880000;
+}
+.buckle-btn.warning, .warning.buckle-scroll-top {
+  background: #e3c200;
+  color: #1a1a1a;
+  border-color: #e3c200;
+}
+.buckle-btn.warning:hover, .warning.buckle-scroll-top:hover {
+  background: #b09600;
+  border-color: #b09600;
+  color: #fff;
 }
 .buckle-btn.outline, .outline.buckle-scroll-top {
   background: transparent;
-  color: #007bff;
-  border-color: #007bff;
+  color: #023396;
+  border-color: #023396;
 }
 .buckle-btn.outline:hover, .outline.buckle-scroll-top:hover {
-  background: #007bff;
+  background: #023396;
   color: #fff;
 }
 
@@ -292,9 +311,9 @@ body {
 }
 
 .buckle-scroll-top {
-  background: #007bff;
+  background: #023396;
   color: #fff;
-  border: 1px solid #007bff;
+  border: 1px solid #023396;
   border-radius: 4px;
   padding: 8px 12px;
   position: fixed;
@@ -306,11 +325,11 @@ body {
   z-index: 1000;
 }
 .buckle-scroll-top:hover {
-  background: #0062cc;
-  border-color: #0062cc;
+  background: #012264;
+  border-color: #012264;
 }
 .buckle-scroll-top:focus {
-  outline: 2px solid #007bff;
+  outline: 2px solid #023396;
   outline-offset: 2px;
 }
 
@@ -322,13 +341,13 @@ body {
 }
 .buckle-form-control:focus {
   outline: none; /* Fixed typo from earlier */
-  border-color: #007bff;
-  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+  border-color: #023396;
+  box-shadow: 0 0 4px rgba(2, 51, 150, 0.3);
 }
 
 .buckle-form-label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-weight: bold;
 }
 
@@ -353,23 +372,27 @@ body {
   border-radius: 4px;
   position: relative;
 }
+.buckle-alert.info {
+  background: #034de1;
+  color: #fff;
+}
 .buckle-alert.success {
-  background: #28a745;
+  background: #027617;
   color: #fff;
 }
 .buckle-alert.danger {
-  background: #dc3545;
+  background: #bb0000;
   color: #fff;
 }
 .buckle-alert.warning {
-  background: #ffc107;
+  background: #e3c200;
   color: #000;
 }
 
 .buckle-alert-close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 16px;
+  right: 16px;
   background: none;
   border: none;
   font-size: 16px;
@@ -378,25 +401,29 @@ body {
 
 .buckle-badge {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 8px 16px;
   border-radius: 4px;
   font-size: 14px;
   font-weight: bold;
 }
 .buckle-badge.primary {
-  background: #007bff;
+  background: #023396;
+  color: #fff;
+}
+.buckle-badge.info {
+  background: #034de1;
   color: #fff;
 }
 .buckle-badge.success {
-  background: #28a745;
+  background: #027617;
   color: #fff;
 }
 .buckle-badge.danger {
-  background: #dc3545;
+  background: #bb0000;
   color: #fff;
 }
 .buckle-badge.warning {
-  background: #ffc107;
+  background: #e3c200;
   color: #000;
 }
 
@@ -497,8 +524,8 @@ body {
   color: #6c757d;
 }
 .buckle-tab.active {
-  color: #007bff;
-  border-bottom: 2px solid #007bff;
+  color: #023396;
+  border-bottom: 2px solid #023396;
 }
 
 .buckle-tab-panel {
@@ -513,11 +540,11 @@ body {
 .buckle-deck {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 32px;
 }
 
 .buckle-deck-card {
-  flex: 1 1 calc(33.3333333333% - 20px);
+  flex: 1 1 calc(33.3333333333% - 32px);
   border: 1px solid #6c757d;
   border-radius: 4px;
   overflow: hidden;
@@ -647,7 +674,7 @@ body {
 }
 @media (max-width: 768px) {
   .buckle-deck-card {
-    flex: 1 1 calc(50% - 20px);
+    flex: 1 1 calc(50% - 32px);
   }
 }
 @media (max-width: 576px) {
@@ -728,153 +755,153 @@ body {
 }
 
 .buckle-p-1, .buckle-form-control {
-  padding: 10px;
+  padding: 16px;
 }
 
 .buckle-px-1 {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .buckle-py-1 {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .buckle-pt-1 {
-  padding-top: 10px;
+  padding-top: 16px;
 }
 
 .buckle-pr-1 {
-  padding-right: 10px;
+  padding-right: 16px;
 }
 
 .buckle-pb-1 {
-  padding-bottom: 10px;
+  padding-bottom: 16px;
 }
 
 .buckle-pl-1 {
-  padding-left: 10px;
+  padding-left: 16px;
 }
 
 .buckle-p-2, .buckle-alert, .buckle-deck-card .buckle-deck-body {
-  padding: 20px;
+  padding: 32px;
 }
 
 .buckle-px-2 {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .buckle-py-2 {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .buckle-pt-2 {
-  padding-top: 20px;
+  padding-top: 32px;
 }
 
 .buckle-pr-2 {
-  padding-right: 20px;
+  padding-right: 32px;
 }
 
 .buckle-pb-2 {
-  padding-bottom: 20px;
+  padding-bottom: 32px;
 }
 
 .buckle-pl-2 {
-  padding-left: 20px;
+  padding-left: 32px;
 }
 
 .buckle-p-3 {
-  padding: 30px;
+  padding: 48px;
 }
 
 .buckle-px-3 {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 .buckle-py-3 {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .buckle-pt-3 {
-  padding-top: 30px;
+  padding-top: 48px;
 }
 
 .buckle-pr-3 {
-  padding-right: 30px;
+  padding-right: 48px;
 }
 
 .buckle-pb-3 {
-  padding-bottom: 30px;
+  padding-bottom: 48px;
 }
 
 .buckle-pl-3 {
-  padding-left: 30px;
+  padding-left: 48px;
 }
 
 .buckle-p-4 {
-  padding: 40px;
+  padding: 64px;
 }
 
 .buckle-px-4 {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 
 .buckle-py-4 {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .buckle-pt-4 {
-  padding-top: 40px;
+  padding-top: 64px;
 }
 
 .buckle-pr-4 {
-  padding-right: 40px;
+  padding-right: 64px;
 }
 
 .buckle-pb-4 {
-  padding-bottom: 40px;
+  padding-bottom: 64px;
 }
 
 .buckle-pl-4 {
-  padding-left: 40px;
+  padding-left: 64px;
 }
 
 .buckle-p-5 {
-  padding: 50px;
+  padding: 80px;
 }
 
 .buckle-px-5 {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .buckle-py-5 {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .buckle-pt-5 {
-  padding-top: 50px;
+  padding-top: 80px;
 }
 
 .buckle-pr-5 {
-  padding-right: 50px;
+  padding-right: 80px;
 }
 
 .buckle-pb-5 {
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 
 .buckle-pl-5 {
-  padding-left: 50px;
+  padding-left: 80px;
 }
 
 .buckle-m-0, .buckle-deck-card .buckle-deck-media {
@@ -908,153 +935,153 @@ body {
 }
 
 .buckle-m-1 {
-  margin: 10px;
+  margin: 16px;
 }
 
 .buckle-mx-1 {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .buckle-my-1 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .buckle-mt-1, .buckle-deck-card .buckle-btn, .buckle-deck-card .buckle-scroll-top {
-  margin-top: 10px;
+  margin-top: 16px;
 }
 
 .buckle-mr-1 {
-  margin-right: 10px;
+  margin-right: 16px;
 }
 
 .buckle-mb-1, .buckle-deck-card .buckle-deck-title, .buckle-deck-card .buckle-deck-text {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .buckle-ml-1 {
-  margin-left: 10px;
+  margin-left: 16px;
 }
 
 .buckle-m-2 {
-  margin: 20px;
+  margin: 32px;
 }
 
 .buckle-mx-2 {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
 .buckle-my-2 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .buckle-mt-2 {
-  margin-top: 20px;
+  margin-top: 32px;
 }
 
 .buckle-mr-2 {
-  margin-right: 20px;
+  margin-right: 32px;
 }
 
 .buckle-mb-2, .buckle-form-group, .buckle-alert, .buckle-deck {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .buckle-ml-2 {
-  margin-left: 20px;
+  margin-left: 32px;
 }
 
 .buckle-m-3 {
-  margin: 30px;
+  margin: 48px;
 }
 
 .buckle-mx-3 {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 48px;
+  margin-right: 48px;
 }
 
 .buckle-my-3 {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 
 .buckle-mt-3 {
-  margin-top: 30px;
+  margin-top: 48px;
 }
 
 .buckle-mr-3 {
-  margin-right: 30px;
+  margin-right: 48px;
 }
 
 .buckle-mb-3 {
-  margin-bottom: 30px;
+  margin-bottom: 48px;
 }
 
 .buckle-ml-3 {
-  margin-left: 30px;
+  margin-left: 48px;
 }
 
 .buckle-m-4 {
-  margin: 40px;
+  margin: 64px;
 }
 
 .buckle-mx-4 {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 64px;
+  margin-right: 64px;
 }
 
 .buckle-my-4 {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 
 .buckle-mt-4 {
-  margin-top: 40px;
+  margin-top: 64px;
 }
 
 .buckle-mr-4 {
-  margin-right: 40px;
+  margin-right: 64px;
 }
 
 .buckle-mb-4 {
-  margin-bottom: 40px;
+  margin-bottom: 64px;
 }
 
 .buckle-ml-4 {
-  margin-left: 40px;
+  margin-left: 64px;
 }
 
 .buckle-m-5 {
-  margin: 50px;
+  margin: 80px;
 }
 
 .buckle-mx-5 {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .buckle-my-5 {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .buckle-mt-5 {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .buckle-mr-5 {
-  margin-right: 50px;
+  margin-right: 80px;
 }
 
 .buckle-mb-5 {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .buckle-ml-5 {
-  margin-left: 50px;
+  margin-left: 80px;
 }
 
 .buckle-m-auto {
@@ -1127,11 +1154,6 @@ body {
   clear: both;
 }
 
-.buckle-bg-dark-50 {
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-}
-
 .buckle-rounded-bottom-none {
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
@@ -1139,58 +1161,85 @@ body {
 
 .buckle-bg-dark-10 {
   background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
 }
 
 .buckle-bg-light-10 {
   background-color: rgba(255, 255, 255, 0.1);
+  color: #000;
 }
 
 .buckle-bg-dark-25 {
   background-color: rgba(0, 0, 0, 0.25);
+  color: #fff;
 }
 
 .buckle-bg-light-25 {
   background-color: rgba(255, 255, 255, 0.25);
+  color: #000;
 }
 
 .buckle-bg-dark-35 {
   background-color: rgba(0, 0, 0, 0.35);
+  color: #fff;
 }
 
 .buckle-bg-light-35 {
   background-color: rgba(255, 255, 255, 0.35);
+  color: #000;
 }
 
 .buckle-bg-dark-50 {
   background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
 }
 
 .buckle-bg-light-50 {
   background-color: rgba(255, 255, 255, 0.5);
+  color: #000;
 }
 
 .buckle-bg-dark-60 {
   background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
 }
 
 .buckle-bg-light-60 {
   background-color: rgba(255, 255, 255, 0.6);
+  color: #000;
 }
 
 .buckle-bg-dark-75 {
   background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
 }
 
 .buckle-bg-light-75 {
   background-color: rgba(255, 255, 255, 0.75);
+  color: #000;
 }
 
 .buckle-bg-dark-90 {
   background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
 }
 
 .buckle-bg-light-90 {
   background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+}
+
+.buckle-bg-scene {
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.pool-bg {
+  background-image: url("../img/slide-3.jpg");
+}
+
+#testimonials {
+  font-size: 1.5rem;
 }
 
 body {
@@ -1231,9 +1280,9 @@ body {
 }
 
 .buckle-scroll-top {
-  background: #007bff;
+  background: #023396;
   color: #fff;
-  border: 1px solid #007bff;
+  border: 1px solid #023396;
   border-radius: 4px;
   padding: 8px 12px;
   position: fixed;
@@ -1245,11 +1294,11 @@ body {
   z-index: 1000;
 }
 .buckle-scroll-top:hover {
-  background: #0062cc;
-  border-color: #0062cc;
+  background: #012264;
+  border-color: #012264;
 }
 .buckle-scroll-top:focus {
-  outline: 2px solid #007bff;
+  outline: 2px solid #023396;
   outline-offset: 2px;
 }
 

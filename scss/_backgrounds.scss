@@ -11,8 +11,15 @@ $background-opacities: (
 @each $opacity-name, $opacity-value in $background-opacities {
   .buckle-bg-dark-#{$opacity-name} {
     background-color: rgba($black, $opacity-value);
+	color:$white;
   }
   .buckle-bg-light-#{$opacity-name} {
     background-color: rgba($white, $opacity-value);
+	color:$black;
   }
+}
+
+.buckle-bg-scene {
+	background-size:cover;
+	background-attachment:fixed;
 }
